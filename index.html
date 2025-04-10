@@ -3,47 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bài 02</title>
+    <title>Bài 03</title>
   </head>
   <body>
-    <h1>Học ul-ol-li lồng nhau</h1>
-    <h2>Thực hành 1</h2>
-    <ol type="I">
-      <b><li>Mở bài: giới thiệu nhân vật trong truyện cổ tích</li></b>
-      <b><li>Thân bài: tả nhân vật trong truyện cổ tích</b>
-        <ol>
-          <li>Tả bao quát nhân vật trong truyện cổ tích</li>
-          <li>Tả chi tiết nhân vật trong truyện cổ tích
-            <ol type="a">
-              <li>Tả ngoại hình của nhân vật trong truyện cổ tích</li>
-              <li>Tả tính tình của nhân vật trong truyện cổ tích</li>
-              <li>Tả hoạt động của nhân vật trong truyện cổ tích</li>
-            </ol>
-          </li>
-        </ol>
-      </li>
-      <b><li>Kết bài: nêu cảm nghĩ của em về nhân vật trong truyện cổ tích</li></b>
-    </ol>
-    <br>
-    <h2>Thực hành 2</h2>
-    <ul>
-      <li>Menu Item 1</li>
-      <li>Menu Item 2
-        <ol type="I">
-          <li>Menu item 2.1</li>
-          <li>Menu item 2.2
-            <ol>
-              <li>Menu item 2.2.1</li>
-              <li>Menu item 2.2.2</li>
-              <li>Menu item 2.2.3</li>
-            </ol>
-          </li>
-          <li>Menu item 2.3</li>
-          <li>Menu item 2.4</li>
-        </ol>
-      </li>
-      <li>Menu Item 3</li>
-      <li>Menu Item 4</li>
-    </ul>
+    <h1>
+      Học tag a kết hợp mở ứng dụng liên kết bên ngoài với thuộc tính href
+    </h1>
+    <br />
+
+    <h2>Tag a với href sử dụng như bình thường</h2>
+    <!-- a[href="https://www.google.com.vn/" target="_blank"]{Click vào để mở google} -->
+    <a href="https://www.google.com.vn/" target="_blank"
+      >Click vào để mở google</a
+    >
+
+    <!-- target[_blank] dùng để mở địa chỉ IP được link tới ở new tab -->
+
+    <br /><br />
+
+    <h2>Tag a với href sử dụng để mở phone call</h2>
+    <a href="tel:091000008">Click vào để call với em nhé</a>
+
+    <br /><br />
+
+    <h2>Tag a với href sử dụng để mở mail</h2>
+    <a
+      href="mailto:friend@gmail.com
+      ?cc=sep1@gmail.com,sep2@gmail.com
+      &subject=Hello"
+    >
+      Click vào để gửi mail
+    </a>
+
+    <!-- Các lưu ý của cấu trúc mail như sau:
+     1.ngay sau phần mailto bắt buộc phải là dấu ? và phải viết dính liền với phần tử sau nó
+     2.nối giữa các tham số khác với nhau là dấu &,và phải viết dính liền với phần tử sau nó 
+     3.để truyền vào 1 lúc nhiều tham số của 1 phần tử[cc] thì chúng cách nhau bởi dấu phẩy -->
+
+    <!-- Trong đó
+     +[mailto] tương ứng với [to]/người nhận mail trên ứng dụng email
+     +[ccc] tương ứng với [cc] - nghĩa là 
+        =>Gửi bản sao email cho người khác. Tất cả người nhận sẽ thấy danh sách những người được CC.
+     +[bcc] tương ứng với [bbc] - nghĩa là 
+        =>Gửi bản sao "ẩn" cho người khác. Những người nhận sẽ không thấy ai được BCC, và thậm chí cả người trong BCC cũng không thấy nhau.-->
   </body>
 </html>

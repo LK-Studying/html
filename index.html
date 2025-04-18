@@ -6,39 +6,64 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Học về Table</h1>
-    <table>
+    <h1>Table nâng cao, colspan - rowspan</h1>
+    <h2>Table lúc chưa dùng col/rowspan</h2>
+    <table border="1">
       <thead>
         <tr>
           <th>Tên sản phẩm</th>
-          <th>Giá</th>
+          <th>Mô tả</th>
         </tr>
       </thead>
 
       <tbody>
         <tr>
           <td>Áo phông</td>
-          <td>100.000 vnd</td>
+          <td>Chất liệu</td>
+          <td>Bạt</td>
         </tr>
-
+        <tr>
+          <td>Kích Thước</td>
+          <td>M,L,XL</td>
+        </tr>
         <tr>
           <td>Quần jean</td>
-          <td>150.000 vnd</td>
+          <td>Quần jean cao cấp dễ dàng phối đồ</td>
         </tr>
       </tbody>
 
-      <tfoot>
-        <tr>
-          <td>Tổng cộng</td>
-          <td>250.000 vnd</td>
-        </tr>
-      </tfoot>
+      <tfoot></tfoot>
     </table>
 
-    <!-- Cấu trúc bảng như trên có những lợi ích sau:
-     1.Tường minh hơn
-     2.Hỗ trợ tốt hơn cho công cụ tìm kiếm
-     3.Hỗ trợ trình đọc máy cho người khiếm thị
-     -->
+    <h2>Table lúc dùng col/rowspan</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Tên sản phẩm</th>
+          <th colspan="2">Mô tả</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="2">Áo phông</td>
+          <td>Chất liệu</td>
+          <td>Bạt</td>
+        </tr>
+        <tr>
+          <td>Kích Thước</td>
+          <td>M,L,XL</td>
+        </tr>
+        <tr>
+          <td>Quần jean</td>
+          <td colspan="2">Quần jean cao cấp dễ dàng phối đồ</td>
+        </tr>
+      </tbody>
+
+      <tfoot></tfoot>
+
+      <!-- colspan chiếm bao nhiêu cột từ trái qua phải
+       rowspan chiếm bao nhiêu hàng từ trên xuống -->
+    </table>
   </body>
 </html>

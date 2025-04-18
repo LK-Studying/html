@@ -6,64 +6,42 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Table nâng cao, colspan - rowspan</h1>
-    <h2>Table lúc chưa dùng col/rowspan</h2>
+    <h1>Bài tập Table nâng cao, colspan - rowspan</h1>
     <table border="1">
       <thead>
         <tr>
           <th>Tên sản phẩm</th>
-          <th>Mô tả</th>
+          <th>Giá sản phẩm</th>
+          <th>Số lượng còn lại</th>
         </tr>
       </thead>
 
       <tbody>
         <tr>
-          <td>Áo phông</td>
-          <td>Chất liệu</td>
-          <td>Bạt</td>
+          <td>Áo thun nam</td>
+          <td>100.000 vnd</td>
+          <td>50</td>
         </tr>
+
         <tr>
-          <td>Kích Thước</td>
-          <td>M,L,XL</td>
+          <td>Quan jean nu</td>
+          <td>200.000 vnd</td>
+          <td>20</td>
         </tr>
+
         <tr>
-          <td>Quần jean</td>
-          <td>Quần jean cao cấp dễ dàng phối đồ</td>
+          <td>Giay the thao</td>
+          <td>300.000 vnd</td>
+          <td>30</td>
         </tr>
       </tbody>
 
-      <tfoot></tfoot>
-    </table>
-
-    <h2>Table lúc dùng col/rowspan</h2>
-    <table border="1">
-      <thead>
+      <tfoot>
         <tr>
-          <th>Tên sản phẩm</th>
-          <th colspan="2">Mô tả</th>
+          <td>Remark</td>
+          <td colspan="2">Chi thong ke san pham trong kho</td>
         </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td rowspan="2">Áo phông</td>
-          <td>Chất liệu</td>
-          <td>Bạt</td>
-        </tr>
-        <tr>
-          <td>Kích Thước</td>
-          <td>M,L,XL</td>
-        </tr>
-        <tr>
-          <td>Quần jean</td>
-          <td colspan="2">Quần jean cao cấp dễ dàng phối đồ</td>
-        </tr>
-      </tbody>
-
-      <tfoot></tfoot>
-
-      <!-- colspan chiếm bao nhiêu cột từ trái qua phải
-       rowspan chiếm bao nhiêu hàng từ trên xuống -->
+      </tfoot>
     </table>
   </body>
 </html>

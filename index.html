@@ -1,29 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css">
+    <style>
+      .center {
+        text-align: center;
+        border: 1px solid black;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+
+      .justify {
+        text-align: justify;
+        border: 1px solid black;
+        padding: 10px;
+      }
+    </style>
   </head>
   <body>
-    <p>How to get tag a*3 in newlines when using emmet</p>
-    <img src="image.png" alt="Vi du" />
-    <p>
-      Hãy làm như này <br>
-      <pre>
-        <code class="language-html">
-          "emmet.syntaxProfiles": {
-            "html": {
-              "inline_break": 1
-            },
-          }
-        </code>
-      </pre>
-    </p>
-   
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    p{Giải ngố sự khác biệt giữa center và justify}
+    <div class="center">
+      Đây là đoạn văn được căn giữa. Mỗi dòng văn bản sẽ nằm ở giữa phần tử chứa
+      nó. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+      voluptate accusamus molestiae optio vitae sint, illo quasi?
+    </div>
+
+    <div class="justify">
+      Đây là đoạn văn được dàn đều hai bên lề. Khoảng cách giữa các từ sẽ được
+      điều chỉnh để dòng văn bản căng ra đều từ trái sang phải. Lorem ipsum
+      dolor sit amet consectetur, adipisicing elit. Perspiciatis distinctio
+      accusamus eos optio, fuga aperiam sequi numquam!
+    </div>
   </body>
 </html>

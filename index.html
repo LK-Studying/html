@@ -1,34 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <style>
-      .center {
-        text-align: center;
-        border: 1px solid black;
-        margin-bottom: 20px;
-        padding: 10px;
-      }
-
-      .justify {
-        text-align: justify;
-        border: 1px solid black;
-        padding: 10px;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    p{Giải ngố sự khác biệt giữa center và justify}
-    <div class="center">
-      Đây là đoạn văn được căn giữa. Mỗi dòng văn bản sẽ nằm ở giữa phần tử chứa
-      nó. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-      voluptate accusamus molestiae optio vitae sint, illo quasi?
-    </div>
+    <h1>Sự khác biệt giữa opacity, visibility, display</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>opacity</th>
+          <th>visibility</th>
+          <th>display</th>
+        </tr>
+      </thead>
 
-    <div class="justify">
-      Đây là đoạn văn được dàn đều hai bên lề. Khoảng cách giữa các từ sẽ được
-      điều chỉnh để dòng văn bản căng ra đều từ trái sang phải. Lorem ipsum
-      dolor sit amet consectetur, adipisicing elit. Perspiciatis distinctio
-      accusamus eos optio, fuga aperiam sequi numquam!
-    </div>
+      <tbody>
+        <tr>
+          <td>
+            Khi opacity =0: <br />
+            +Không nhìn thấy trên giao diện<br />
+            +Nhưng vẫn chiếm dụng không gian<br />
+            +Vì vậy có thể tương tác được(copy)
+          </td>
+          <td>
+            Khi display = none: <br />
+            +Không nhìn thấy trên giao diện<br />
+            +Ko chiếm dụng không gian<br />
+            +Phần tử bị xóa khỏi giao diện
+          </td>
+          <td>
+            Khi visibility = hidden: <br />
+            +Không nhìn thấy trên giao diện<br />
+            +Nhưng vẫn chiếm dụng không gian<br />
+            +ko thể tương tác được(copy)
+          </td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="3">
+            <img src="./imgs/final.png" alt="Tóm tắt khác biệt" width="100%" />
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <p>demo opacity</p>
+    <h1>1.hello</h1>
+    <h2>2.hello</h2>
+    <h3>3.hello</h3>
+    <br />
+    <br />
+    <p>demo display</p>
+    <h1>1.hello</h1>
+    <h2 style="display: none">2.hello</h2>
+    <h3>3.hello</h3>
+
+    <br />
+    <br />
+    <p>demo visibility</p>
+    <h1>1.hello</h1>
+    <h2 class="visible">2.hello</h2>
+    <h3>3.hello</h3>
+
+    <a href="./imgs/opa.png" target="_blank">Click to see opacity experience</a>
   </body>
 </html>

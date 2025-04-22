@@ -1,0 +1,8 @@
+h1 {
+  color: blue;
+  /* Không cho user bôi đen copy, etc */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

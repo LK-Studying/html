@@ -1,0 +1,14 @@
+/* Nếu input dc check => chọn những phần tử img đồng cấp đứng sau nó */
+input:checked ~ img {
+  /* 1. Nếu muốn biến mất khỏi giao diện */
+  /* display: none; */
+  /* 2. biến khỏi giao diện nhưng vẫn chiếm giữ vị trí */
+  /* Visi có thể đi chung với opa=0 */
+  visibility: hidden;
+}
+
+img {
+  /* trì hoãn tác động thay đổi 1.5s 
+  thông thường nó sẽ đi kèm với opacity lẫn visibility*/
+  transition: 1.5s;
+}

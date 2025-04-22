@@ -1,72 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body>
-    <h1>Sự khác biệt giữa opacity, visibility, display</h1>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>opacity</th>
-          <th>visibility</th>
-          <th>display</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>
-            Khi opacity =0: <br />
-            +Không nhìn thấy trên giao diện<br />
-            +Nhưng vẫn chiếm dụng không gian<br />
-            +Vì vậy có thể tương tác được(copy)
-          </td>
-          <td>
-            Khi display = none: <br />
-            +Không nhìn thấy trên giao diện<br />
-            +Ko chiếm dụng không gian<br />
-            +Phần tử bị xóa khỏi giao diện
-          </td>
-          <td>
-            Khi visibility = hidden: <br />
-            +Không nhìn thấy trên giao diện<br />
-            +Nhưng vẫn chiếm dụng không gian<br />
-            +ko thể tương tác được(copy)
-          </td>
-        </tr>
-      </tbody>
-
-      <tfoot>
-        <tr>
-          <td colspan="3">
-            <img src="./imgs/final.png" alt="Tóm tắt khác biệt" width="100%" />
-          </td>
-        </tr>
-      </tfoot>
-    </table>
-
-    <p>demo opacity</p>
-    <h1>1.hello</h1>
-    <h2>2.hello</h2>
-    <h3>3.hello</h3>
-    <br />
-    <br />
-    <p>demo display</p>
-    <h1>1.hello</h1>
-    <h2 style="display: none">2.hello</h2>
-    <h3>3.hello</h3>
-
-    <br />
-    <br />
-    <p>demo visibility</p>
-    <h1>1.hello</h1>
-    <h2 class="visible">2.hello</h2>
-    <h3>3.hello</h3>
-
-    <a href="./imgs/opa.png" target="_blank">Click to see opacity experience</a>
+    <h1>opacity-display-visibility</h1>
+    <img src="./img/kienthuc.png" alt="Kiến thức bài cũ" />
+    <input type="checkbox" /> Click vào em đi đừng sợ <br />
+    <img src="./img/goetia.jpg" alt="goetia fgo" />
+    <p>Nội dung phía sau của trang</p>
+    <p>Có 2 thứ bạn nên tiết kiệm, đó là sức khỏe và lời hứa.</p>
+    <p>Có 2 thứ bạn phải cho đi, đó là tri thức và lòng tốt.</p>
+    <p>Có 2 thứ bạn phải thay đổi, đó là bản thân và nhận thức.</p>
   </body>
 </html>

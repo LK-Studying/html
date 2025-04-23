@@ -1,19 +1,11 @@
-/* Set màu khi chưa click vào */
-a:link {
-  color: blue;
+/* tô màu những div rỗng */
+div:empty {
+  background-color: blue;
+  height: 50px;
 }
 
-/* đổi màu khi di chuột qua */
-a:hover {
-  color: antiquewhite;
-}
-
-/* đổi màu khi đã click truy cập */
-a:visited {
-  color: aquamarine;
-}
-
-/* đổi màu khi nhấn giữ chuột */
-a:active {
-  color: pink;
+/* chuyển màu nội dung đích đến của link hash #id */
+h2:target {
+  background-color: black;
+  color: aliceblue;
 }

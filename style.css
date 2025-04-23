@@ -1,5 +1,19 @@
-/* chọn title có kết thúc chứa giá trị 1 or 5 */
-a[title$="1"],
-a[title$="5"] {
-  color: red;
+/* Set màu khi chưa click vào */
+a:link {
+  color: blue;
+}
+
+/* đổi màu khi di chuột qua */
+a:hover {
+  color: antiquewhite;
+}
+
+/* đổi màu khi đã click truy cập */
+a:visited {
+  color: aquamarine;
+}
+
+/* đổi màu khi nhấn giữ chuột */
+a:active {
+  color: pink;
 }

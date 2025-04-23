@@ -1,25 +1,37 @@
-/* chọn tất cả thẻ p là con của thẻ div, bao gồm con trực tiếp và không trực tiếp */
-/* div p {
+/* Chọn tất cả thẻ có thuộc tính(property) là href */
+/* [href] {
   color: red;
 } */
 
-/* chọn tất cả thẻ p là con trực tiếp của thẻ div có class là demo */
-/* .demo > p {
-  color: red;
+/* Chỉ tác động thẻ a có thuộc tính là href */
+/* a[href] {
+  color: blueviolet;
 } */
 
-/* chọn tất cả thẻ p là con của thẻ div có class là demo1 */
-/* .demo1 p {
+/* Chọn tất cả các thẻ có thuộc tính chính xác giá trị target="_blank" */
+/* a[target="_blank"] {
+  color: burlywood;
+} */
+
+/* chọn tất cả thẻ a có chứa từ pic và so 
+Cách làm này lọc ra những title có chứa từ pic đứng đơn lẻ trong title và không quan tâm vị trí của từ
+vd: pic3 không phải từ pic đơn lẻ, mà là 1 chuỗi có giá trị là pic3
+*/
+/* a[title~="pic"][title~="so"] {
+  color: greenyellow;
+} */
+
+/* chọn tất cả thẻ a có chứa từ biệt trong chuỗi */
+/* a[title*="biet"] {
+  color: aqua;
+} */
+
+/* chọn all a có title là từ duy nhất được bắt đầu bằng từ pic hoặc sau pic phải có dấu - để nối*/
+/* a[title|="pic"] {
+  color: aqua;
+} */
+
+/* title bắt đầu = pic, không quan tâm phía sau */
+a[title^="pic"] {
   color: blue;
-  font-size: larger;
-} */
-
-/* chọn phần tử p đầu tiên nằm ngay sau div */
-/* div + p {
-  color: yellow;
-} */
-
-/* chọn tất cả phần tử p nằm ngay sau div */
-div ~ p {
-  color: yellow;
 }

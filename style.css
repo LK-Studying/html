@@ -1,8 +1,25 @@
-h1 {
+/* chọn tất cả thẻ p là con của thẻ div, bao gồm con trực tiếp và không trực tiếp */
+/* div p {
+  color: red;
+} */
+
+/* chọn tất cả thẻ p là con trực tiếp của thẻ div có class là demo */
+/* .demo > p {
+  color: red;
+} */
+
+/* chọn tất cả thẻ p là con của thẻ div có class là demo1 */
+/* .demo1 p {
   color: blue;
-  /* Không cho user bôi đen copy, etc */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  font-size: larger;
+} */
+
+/* chọn phần tử p đầu tiên nằm ngay sau div */
+/* div + p {
+  color: yellow;
+} */
+
+/* chọn tất cả phần tử p nằm ngay sau div */
+div ~ p {
+  color: yellow;
 }

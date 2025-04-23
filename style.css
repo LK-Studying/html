@@ -1,11 +1,23 @@
-/* tô màu những div rỗng */
-div:empty {
-  background-color: blue;
-  height: 50px;
-}
+/* Đổi màu tag p ở vị trí đầu tiên tính từ thẻ cha */
+/* p:first-child {
+  color: red;
+  font-size: 30px;
+} */
 
-/* chuyển màu nội dung đích đến của link hash #id */
-h2:target {
-  background-color: black;
-  color: aliceblue;
+/* Đổi màu tag p xuất hiện đầu tiên tính từ thẻ cha */
+/* p:first-of-type {
+  color: red;
+  font-size: 30px;
+} */
+
+/* tác động thẻ p ở vị trí số #3 */
+/* p:nth-child(3) {
+  color: red;
+  font-size: 30px;
+} */
+
+/* tác động thẻ p ở xuất hiện lần thứ #3 */
+p:nth-of-type(3) {
+  color: red;
+  font-size: 30px;
 }

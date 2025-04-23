@@ -1,23 +1,16 @@
-/* Đổi màu tag p ở vị trí đầu tiên tính từ thẻ cha */
-/* p:first-child {
-  color: red;
-  font-size: 30px;
+/*áp eff cho những thẻ có class demo ngoại trừ thẻ p  */
+/* .demo:not(p) {
+  background-color: yellow;
 } */
 
-/* Đổi màu tag p xuất hiện đầu tiên tính từ thẻ cha */
-/* p:first-of-type {
-  color: red;
-  font-size: 30px;
+/* có thể áp dụng cùng lớp giả */
+/* áp eff trừ các phần tử đầu tiên mỗi loại */
+/* .demo:not(:first-of-type) {
+  background-color: aqua;
 } */
 
-/* tác động thẻ p ở vị trí số #3 */
-/* p:nth-child(3) {
-  color: red;
-  font-size: 30px;
-} */
-
-/* tác động thẻ p ở xuất hiện lần thứ #3 */
-p:nth-of-type(3) {
-  color: red;
-  font-size: 30px;
+/* Khi click vào checkbox => ẩn những thẻ ko phải p thuộc class demo */
+input:checked ~ .demo:not(p) {
+  visibility: hidden;
+  transition: 1.5s;
 }

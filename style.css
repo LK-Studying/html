@@ -1,16 +1,7 @@
-/*áp eff cho những thẻ có class demo ngoại trừ thẻ p  */
-/* .demo:not(p) {
-  background-color: yellow;
-} */
-
-/* có thể áp dụng cùng lớp giả */
-/* áp eff trừ các phần tử đầu tiên mỗi loại */
-/* .demo:not(:first-of-type) {
-  background-color: aqua;
-} */
-
-/* Khi click vào checkbox => ẩn những thẻ ko phải p thuộc class demo */
-input:checked ~ .demo:not(p) {
-  visibility: hidden;
-  transition: 1.5s;
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* border: 10px solid blue; */
+  border-radius: 10px 20px 30px;
 }

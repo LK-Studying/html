@@ -7,23 +7,26 @@
     <title>Box model</title>
   </head>
   <body>
-    <img src="1.png" alt="" />
-    <br />
-    <br />
-
-    <img src="2.png" alt="" />
-
-    <!-- Tuy giống nhưng border-radius khá là khác với padding:
-     1. Nếu truyền vào 2 thông số
-      +padding: Trên dưới - trái phải
-      +border-radius: [Trên trái + dưới phải] - [trên phải + dưới trái], nói cách khác là đường chéo tính từ trên trái
-
-     2. Nếu truyền vào 3 thông số 10px 20px 30px
-      +padding: Trên - trái phải- dưới  
-      +border-radius: Đầu tiên Trên trái 10px - 
-                      thứ 2 là trên phải 20px
-                      Thứ 3 là dưới phải 30px 
-                      Thứ 4 là dưới trái 20px do là chéo của trên phải  -->
-    <div>Hello</div>
+    <div class="container">
+      <h1>Hello</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, quasi?
+        <br />
+        Lorem ipsum consectetur, adipisicing elit. Alias, quasi?
+        <br />
+        Lorem ipsum dolor sit amet elit. Alias, quasi?
+        <br />
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. ?
+        <br />
+        Lorem amet consectetur, adipisicing elit. Alias, quasi?
+        <br />
+        Lorem ipsum dolor , adipisicing elit. Alias, quasi?
+        <br />
+      </p>
+      <img src="./demo.jpg" alt="" />
+      <!-- Khi ảnh quá lớn và width dc set không đủ, ở đây là 700
+       =>ảnh sẽ bị vỡ và phá hủy kết cấu
+          ==>phải set độ rộng tối đa cho nó -->
+    </div>
   </body>
 </html>

@@ -1,7 +1,19 @@
-div {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  /* border: 10px solid blue; */
-  border-radius: 10px 20px 30px;
+.container {
+  margin: 0 auto;
+  width: 700px;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 40px;
+}
+
+.container p {
+  font-size: 24px;
+  /* Khoảng cách giữa các dòng */
+  line-height: 1.4;
+}
+
+.container img {
+  max-width: 600px;
 }

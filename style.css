@@ -1,19 +1,16 @@
-.container {
-  margin: 0 auto;
-  width: 700px;
-  text-align: center;
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid greenyellow;
+  margin-left: -50px;
 }
 
-.container h1 {
-  font-size: 40px;
-}
+/* .avatar:first-child {
+  margin-left: 0;
+} */
 
-.container p {
-  font-size: 24px;
-  /* Khoảng cách giữa các dòng */
-  line-height: 1.4;
-}
-
-.container img {
-  max-width: 600px;
+/* Tương tự cách trên */
+.avatar.ava1 {
+  margin-left: 0;
 }
